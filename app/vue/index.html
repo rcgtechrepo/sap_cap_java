@@ -24,13 +24,18 @@
 
     <table id='books' class="hovering">
         <thead>
+            <th> </th>
             <th> Book </th>
             <th> Author </th>
             <th> Genre </th>
-            <th> Rating </th>
+            <th> Rating </th
+                >
             <th> Price </th>
         </thead>
         <tr v-for="book in books" v-bind:id="book.ID" v-on:click="inspectBook">
+
+            <td><img :src="getImg(book.title)" style="width:30px; height: 22px;"></td>
+
             <td>{{ book.title }}</td>
             <td>{{ book.author.name }}</td>
             <td>{{ book.genre.name }}</td>

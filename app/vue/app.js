@@ -90,6 +90,15 @@ const bookshop = new Vue({
       bookshop.review = bookshop.reviews[eve.currentTarget.rowIndex - 1];
     },
 
+    getImg(title){
+      if(title == "American Airlines")
+        return "aa.png";
+      else if(title == "Delta Airlines")
+        return "delta.png";
+      else
+        return "united.png";
+    },
+
     newReview() {
       bookshop.review = {};
       bookshop.message = {};
