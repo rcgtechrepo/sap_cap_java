@@ -1,0 +1,5 @@
+cds.gen.api_business_partner.ApiBusinessPartner
+cds.gen.adminservice.AdminService
+cds.gen.reviewservice.ReviewService
+cds.gen.notesservice.NotesService
+cds.gen.catalogservice.CatalogService

@@ -95,6 +95,10 @@ const bookshop = new Vue({
         return "aa.png";
       else if(title == "Delta Airlines")
         return "delta.png";
+      else if(title.startsWith("Southwest Airlines"))
+        return "sw.png";
+      else if(title.startsWith("Air Canada"))
+        return "luf.png";
       else
         return "united.png";
     },
