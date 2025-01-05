@@ -68,7 +68,7 @@
 	            <th> Date </th>
 	            <th> Flight No. </th>
 	            <th> Rating </th>
-	            <th> Title </th>
+	            <th> Litre </th>
 	        </thead>
 	        <tr v-for="review in reviews" v-bind:id="review.ID" v-on:click="inspectReview">
 	            <td>{{ review.modifiedAt | datetime }}</td>
@@ -76,7 +76,7 @@
 	            <td class="rating-stars">
 	            	{{ ('★'.repeat(Math.round(review.rating))+'☆☆☆☆☆').slice(0,5) }}
 	            </td>
-	            <td> XXXX </td>
+	            <td> {{ Math.floor(Math.random() * 100000) + 1000 }} </td>
 	        </tr>
     	</table>
 
@@ -98,7 +98,7 @@
 
     </div>
     <div v-else>
-        ( click on a row to see details... )
+       
     </div>
 
 </div>
