@@ -50,7 +50,7 @@
         <label style="text-align:right">
             <span class="succeeded"> {{ order.succeeded }} </span>
             <span class="failed"> {{ order.failed }} </span>
-            &nbsp;&nbsp; {{ book.stock }} Litre (x1000)
+            &nbsp;&nbsp; {{ book.stock }} Litre <small>(x1000)</small>
         </label>
         <form @submit.prevent="submitOrder" style="float:right; display:flex; flex-direction:row-reverse">
             <input type="number" v-model="order.quantity" v-bind:class="{ failed: order.failed }" style="width:5em">
