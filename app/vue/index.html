@@ -82,7 +82,7 @@
 
     	<button v-on:click="newReview()" class="round-button muted-button">Add Route...</button>
 
-    	<form v-if="review" @submit.prevent="submitReview">
+    	<!-- <form v-if="review" @submit.prevent="submitReview">
 	        <input type="text" v-model="review.title" style="font-weight:bold; display:inline; width:60%">
 	        <select v-model="review.rating" style="font-weight:bold; display:inline; width:17%; float: right;">
 	            <option v-for="option in Ratings" v-bind:value="option[0]"> {{ option[1] }} </option>
@@ -91,9 +91,9 @@
 	        <input type="submit" value="Submit" class="round-button muted-button">
 	        <span class="succeeded"> {{ message.succeeded }} </span>
 	        <span class="failed"> {{ message.failed }} </span>
-	    </form>
+	    </form> -->
 	    <div v-else style="margin-top: 2em;">
-	        ( click on a row to see details... )
+	      
 	    </div>
 
     </div>
